@@ -9,16 +9,17 @@
 </head>
 <body>
     <h1>Kassakvitto</h1>
+    <div class="clear"></div>
     <form id="form1" runat="server">
         <p>Total köpsumma :</p>
     <div>
-        <asp:TextBox ID="TextBox" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TextBox" TextMode="SingleLine" runat="server" Font-Bold="False"></asp:TextBox>
     </div>
-        <div>
-            <asp:Label ID="Label" runat="server" Text="Kr"></asp:Label>
+        <div class="kr">
+            <asp:Label ID="Label" runat="server" Text="Kr" EnableTheming="False" Font-Bold="False" ForeColor="Black"></asp:Label>
         </div>
         <div>
-            <asp:Button ID="Button" runat="server" Text="Beräkna rabatt" OnClick="Button_Click" />
+            <asp:Button ID="Button" runat="server" Text="Beräkna rabatt" OnClick="Button_Click" BorderStyle="Solid" Font-Bold="True" Font-Italic="False" Font-Size="Small" />
         </div>
         <div>
 

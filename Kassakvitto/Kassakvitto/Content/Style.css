@@ -1,2 +1,8 @@
-﻿body {
+﻿.clear {
+    height:30px;
+    clear:both;
 }
+.kr {
+    float:initial;
+}
+
