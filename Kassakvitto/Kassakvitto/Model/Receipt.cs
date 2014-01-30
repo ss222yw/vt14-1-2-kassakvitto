@@ -10,29 +10,65 @@ namespace Kassakvitto.Model
         //privata fältet _subtotal.
         private double _subtotal;
 
-        //Publik egenskap DiscountRate.
+        //Publik auto-implementerade egenskap DiscountRate används till att representera rabatten i procent.
         public double DiscountRate{get; private set;}
 
-        //Publik egenskap MoneyOff.
-        public double MoneyOff{get; private set;}
+        //Publik auto-implementerade egenskap MoneyOff används till att representera rabatten i kronor.
+        public double MoneyOff { get; private set; }
 
-        //Publik egenskap Subtotal.
-        public double Subtotal{get; private set;}
+        //Publik egenskap Subtotal  .
+        public double Subtotal{
+            get
+            {
+                return _subtotal;
+            }
+            private set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentOutOfRangeException();
+                }
+                _subtotal = value;
+            }
+        }
 
-        //Publik metod Total.
+        //Publik auto-implementerade egenskap Total används till att representera beloppet efter att rabatten dragits från den totala köpesumman.
         public double Total{get; private set;}
+
+        // Publik metod Calulate.
+        public void Calculate(double subtotal)
+        {
+            Subtotal = subtotal;
+
+            if (subtotal < 500)
+            {
+                DiscountRate = 0;
+            }
+            else if(subtotal < 1000)
+            {
+                DiscountRate = 0.05;
+            }
+            else if (subtotal < 5000)
+            {
+                DiscountRate = 0.10;
+            }
+            else
+            {
+                DiscountRate = 0.15;
+            }
+
+            MoneyOff = subtotal * DiscountRate;
+
+            Total = subtotal - MoneyOff;
+        }
+        //konstruktor Receipt.
+        public Receipt(double subtotal)
+        {
+            Calculate(subtotal);
+        }
     }
 
-    // Publik metod Calulate.
-    public void Calculate(double subtotal)
-    {
-
-    }
-     //konstruktor Receipt.
-    public Receipt(double subtotal)
-    {
-
-    }
+    
 
 
 }

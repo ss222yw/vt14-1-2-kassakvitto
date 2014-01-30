@@ -1,8 +1,81 @@
 ﻿.clear {
-    height:30px;
+    height:10px;
     clear:both;
 }
-.kr {
-    float:initial;
+
+#CompareValidator, #RequiredFieldValidator{
+    color: red;
 }
 
+#Button {
+    margin-top: 10px;
+}
+
+#Panel {
+    width: 220px;
+    margin-left:15px;
+    height: auto;
+    border: solid 1px #000;
+    margin: auto;
+    background-color:#FAEBD7;
+
+}
+
+#SumTotal, #DiscountRate, #Discount, #ToPay {
+    font-size: 15px;
+    float: left;
+    margin-left:40px;
+}
+
+#DeVe {
+    font-size:xx-large;
+    float:left;
+    margin-left:60px;
+}
+
+#En {
+    float:left;
+     margin-left:50px;
+}
+
+#Tel {
+    float:left;
+    margin-left:45px;
+}
+
+#Tider {
+    float:left;
+    margin-left:55px;
+}
+
+#Ev {
+    float:left;
+    margin-left:15px;
+}
+
+#Stryk , #Stryk1{
+    float:left;
+    margin-left:12px;
+}
+
+#Org , #Welcome {
+    float:left;
+    margin-left:35px;
+}
+
+#KassaKvitto {
+    margin-left:564px;
+    font-size:xx-large;
+}
+#TotalKop {
+    margin-left:564px;
+    color:darkgray;
+}
+
+#TextBox {
+    margin-left:564px;
+}
+
+#Button {
+    margin-left:564px;
+}
