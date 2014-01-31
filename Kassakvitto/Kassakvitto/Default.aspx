@@ -28,19 +28,19 @@
             <div class="clear"></div>            
             <asp:Panel ID="Panel" runat="server" Visible="false">
             <div class="clear"></div>
-            <asp:Label ID="DeVe" runat="server" Text="DeVe"></asp:Label>
+                <span id="DeVe">DeVe</span>
             <div class="clear"></div>
-            <asp:Label ID="En" runat="server" Text="en del av EllenU"></asp:Label>
+                <span id="en del av EllenU"></span>
             <div class="clear"></div>
             <div class="clear"></div>
             <div class="clear"></div>
-            <asp:Label ID="Tel" runat="server" Text="Tel: 0772-28 80 00"></asp:Label>
+                <span id="Tel">Tel: 0772-28 80 00</span>
             <div class="clear"></div>
-            <asp:Label ID="Tider" runat="server" Text="Öppettider 8-17"></asp:Label>
+                <span id="Tider">Öppettider 8-17</span>
             <div class="clear"></div>
-            <asp:Label ID="Ev" runat="server" Text="EV.FEL GER UNDERKÄNT"></asp:Label>
+                <span id="Ev">EV.FEL GER UNDERKÄNT</span>
             <div class="clear"></div>
-            <asp:Label ID="Stryk" runat="server" Text="--------------------------------"></asp:Label>
+                <span id="Stryk">-------------------------------</span>
             <div class="clear"></div>
             <asp:Label ID="SumTotal" runat="server" Text=""></asp:Label>
             <div class="clear"></div>
@@ -50,11 +50,11 @@
             <div class="clear"></div>
             <asp:Label ID="ToPay" runat="server" Text=""></asp:Label>
             <div class="clear"></div>
-            <asp:Label ID="Stryk1" runat="server" Text="--------------------------------"></asp:Label>
+                <span id="Stryk1">-------------------------------</span>
             <div class="clear"></div>
-            <asp:Label ID="Org" runat="server" Text="ORG.NR: 202100-6271"></asp:Label>
+                <span id="Org">ORG.NR: 202100-6271</span>
             <div class="clear"></div>
-            <asp:Label ID="Welcome" runat="server" Text="VÄLKOMMEN ÅTER!"></asp:Label>
+                <span id="Welcome">VÄLKOMMEN ÅTER!</span>
             <div class="clear"></div>
             </asp:Panel>
     </form>
